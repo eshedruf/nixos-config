@@ -1,10 +1,10 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   imports = [
     ../../modules/home/cli.nix
     ../../modules/home/discord.nix
-    ../../modules/home/hyprland.nix
+    ../../modules/home/hyprland/default.nix
     ../../modules/home/neovim.nix
     ../../modules/home/vscode.nix
   ];

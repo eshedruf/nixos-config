@@ -50,7 +50,8 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.eshed = ./hosts/laptop/home.nix;
+            home-manager.users.eshed = import ./hosts/laptop/home.nix;
+	    #home-manager.users.eshed = ./hosts/laptop/home.nix;
           }
         ];
       };
